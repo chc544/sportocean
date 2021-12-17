@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors: (
+        "primary": #001d3d,
+        "secondary": #4ca1fd,
+        "checkout": #ffd300,
+        "addtocart": #148013,
+        "remove": #cb0000
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
